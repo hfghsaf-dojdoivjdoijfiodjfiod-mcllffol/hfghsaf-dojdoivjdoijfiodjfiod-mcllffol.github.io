@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0021)/ -->
 <html lang="zh"><head id="jifkcciiigbfigfcehmmoaomdjdngceo"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,31 +9,29 @@
     <link rel="stylesheet" href="/bootstrap.min.css">
     <link rel="stylesheet" href="/font-awesome.min.css">
     <link rel="stylesheet" href="/i.css">
-
+    <script src="/cooooo.js"></script>
     <script src="/jquery.min.js"></script>
     <script src="/jquery.sliderBar.js"></script>
     <script src="/layer.js"></script><link rel="stylesheet" href="/layer.css" id="layuicss-layer">
-    <script src="/pay.js"></script>
     <script src="/clipboard.js"></script>
-	 <script src="/cooooo.js"></script>
     <title>萝莉社-ZUOWENLoli聚集地</title>
     <!--start::HOOK-->
     
     
     <!--end::HOOK-->
 </head>
-<body style="background: url(&#39;/assets/admin/images/user/authentication/loginbg.jpg&#39;) fixed no-repeat;background-size: cover;">
+<body style="background: url(&#39;/assets/admin/images/login/bg.jpg&#39;) fixed no-repeat;background-size: cover;">
 <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgba(255,255,255,0.85) !important;">
         <div class="container">
            <div class="navbar-brand">
                <a href="/">
                    <img src="/favicon.ico" height="30px" style="border-radius: 50%;box-shadow: #f0d1d4 1px 1px 1px;">
-                    <span style="position: relative;top: 4px;left: 3px;font-weight: bold;color: #1396558a;">  萝莉社-ZUOWENLoli聚集地​                 </span></a>
-                  <a href="/user/authentication/login"><span style="position: relative;top: 4px;left: 10px;font-size: 18px;color: #79b9fbbd;font-weight: bold;"><i class="fa fa-sign-in"></i> 登录</span></a>            </div>
+                    <span style="position: relative;top: 4px;left: 3px;font-weight: bold;color: #1396558a;">  萝莉社-ZUOWENLoli聚集地</span></a>
+                  <a href="/user/authentication/login?goto=/"><span style="position: relative;top: 4px;left: 10px;font-size: 18px;color: #79b9fbbd;font-weight: bold;"><i class="fa fa-sign-in"></i> 登录</span></a>            </div>
             <div class="row">
                 <a class="nav-link" href="/" style="font-weight: bolder;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>首页</a>
-                <a class="nav-link" href="/user/index/query" style="font-weight: bolder;"><i class="fa fa-search-plus" aria-hidden="true"></i> 查单子</a>
+                <a class="nav-link" href="/user/index/query" style="font-weight: bolder;"><i class="fa fa-search-plus" aria-hidden="true"></i> 查作品</a>
                                         </div>
             <!--<div class="navbar-collapse">
                 <ul class="navbar-nav mr-auto"></ul>
@@ -55,7 +52,7 @@
         </div>
 
 
-        <!--            选择资源部分-->
+        <!--            选择作品部分-->
         <div class="card">
             <div class="card-header">
                 <p class="card-title"><i class="fa fa-gratipay" aria-hidden="true"></i>收录</p>
@@ -64,13 +61,12 @@
                 <fieldset class="form-group">
                     <label for="type" style="font-size: 14px;">所有分类</label>
                     <div id="type" class="category">
-                    <span class="category--10 button-click category-button checked" onclick="getCommodity(this,-10)"><img class="commodity-icon" src="/recommend.png"> <b style="color: #ef783b;">推荐</b></span><span class="category-2 button-click category-button " onclick="getCommodity(this,2)"><img class="commodity-icon" src="/favicon.ico"> 网红洛丽</span><span class="category-3 button-click category-button " onclick="getCommodity(this,3)"><img class="commodity-icon" src="/favicon.ico"> 海外</span><span class="category-4 button-click category-button " onclick="getCommodity(this,4)"><img class="commodity-icon" src="/favicon.ico"> 国内</span><span class="category-1 button-click category-button " onclick="getCommodity(this,1)"><img class="commodity-icon" src="/favicon.ico"> 其他</span><span class="category-6 button-click category-button " onclick="getCommodity(this,6)"><img class="commodity-icon" src="/favicon.ico"> 精选</span></div>
+                    <span class="category--10 button-click category-button checked" onclick="getCommodity(this,-10)"><img class="commodity-icon" src="/recommend.png"> <b style="color: #ef783b;">推荐</b></span><span class="category-2 button-click category-button " onclick="getCommodity(this,2)"><img class="commodity-icon" src="/favicon.ico"> 网红美少女</span><span class="category-3 button-click category-button " onclick="getCommodity(this,3)"><img class="commodity-icon" src="/favicon.ico"> 海外</span><span class="category-4 button-click category-button " onclick="getCommodity(this,4)"><img class="commodity-icon" src="/favicon.ico"> 国内</span><span class="category-1 button-click category-button " onclick="getCommodity(this,1)"><img class="commodity-icon" src="/favicon.ico"> 其他</span><span class="category-6 button-click category-button " onclick="getCommodity(this,6)"><img class="commodity-icon" src="/favicon.ico"> 精选</span></div>
                 </fieldset>
 
                 <fieldset class="form-group product" style="">
                     <label for="product" style="font-size: 14px;">点击即选择</label>
                     <div id="product"></div>
-                </fieldset>
             </div>
         </div>
 
@@ -110,7 +106,7 @@
             </div>
             <div class="card-block">
                 <div class="login-display" style="text-align: center;font-weight: bold;margin: 10px 0 20px 0;font-size: 18px;color: #00A3FF;display: none;">
-                    该需要登录才能查看，<a class="login-url" href="/user/authentication/login">现在登录</a></div>
+                    该作品需要登录才能获取，<a class="login-url" href="/user/authentication/login?goto=/">现在登录</a></div>
                 <div class="row pay_type" style="margin-left: 0px;"> <a class="button-click" onclick="Trade(4)" style="line-height: 22px;"> <img src="/202311270927558250195.png" class="commodity-icon"> 微信</a></div>
             </div>
         </div>
@@ -203,7 +199,7 @@
         }
     });
 
-    //-----------------------------------获取资源------------------------------------------
+    //-----------------------------------获取作品------------------------------------------
     function getCommodity(obj, categoryId) {
         switchElement(obj);
         $('.shopInfoHtml').hide(150);
@@ -214,7 +210,7 @@
             $('.product').hide(150);
             productInstance.html("");
             if (list.length === 0) {
-                layer.msg("该分类下没有资源");
+                layer.msg("该分类下没有作品");
                 return;
             }
             $('.product').show(150);
@@ -223,14 +219,14 @@
             });
 
             if (defaultCommodity) {
-                $('.commodity-' + defaultCommodity).click(); //自动点击资源
+                $('.commodity-' + defaultCommodity).click(); //自动点击作品
                 defaultCommodity = null;
             }
         })
     }
 
 
-    //-----------------------------------获取预选卡密--------------------------------------
+    //-----------------------------------获取预选账号--------------------------------------
     function checkbox(obj) {
         let state = $(obj).prop("checked");
         $('input[name=card_id]:checked').prop("checked", false);
@@ -265,7 +261,7 @@
         });
     }
 
-    //-----------------------------------获取资源详情--------------------------------------
+    //-----------------------------------获取作品详情--------------------------------------
 
     function getCommodityInfo(obj, commodityId) {
         $('.shopInfoHtml').hide(150);
@@ -381,7 +377,7 @@
             $('.payAmount').html("¥" + commodity.price);
 
             //未登录
-            //判断是否需要登录才能查看资源
+            //判断是否需要登录才能获取作品
             if (commodity.only_user == 1 || commodity.purchase_count > 0) {
                 $('.login-url').attr("href", "/user/authentication/login?goto=" + encodeURIComponent(commodity.share_url));
                 $('.login-display').show();
@@ -393,9 +389,9 @@
                 $('.kucunView').show();
                 if (commodity.inventory_hidden == 1) {
                     if (commodity.card <= 0) {
-                        $('.card_count').removeClass("badge-success").addClass("badge-dark").html("已售罄");
+                        $('.card_count').removeClass("badge-success").addClass("badge-dark").html("已公开");
                     } else if (commodity.card <= 5) {
-                        $('.card_count').removeClass("badge-success").addClass("badge-danger").html("即将售罄");
+                        $('.card_count').removeClass("badge-success").addClass("badge-danger").html("即将公开");
                     } else if (commodity.card <= 20) {
                         $('.card_count').removeClass("badge-success").addClass("badge-warning").html("一般");
                     } else if (commodity.card > 20) {
@@ -428,7 +424,7 @@
             }
 
             if (commodity.purchase_count > 0) {
-                $('.purchase_count').html("该资源每人累计查看最多" + commodity.purchase_count + "个");
+                $('.purchase_count').html("该作品每人累计获取最多" + commodity.purchase_count + "个");
                 $('.purchase_count').show();
             }
 
@@ -498,7 +494,7 @@
             });
 
 
-            //渲染资源种类
+            //渲染作品种类
             if (commodity.hasOwnProperty('race') && commodity.race) {
                 $('.race-view').show();
                 let raceIndex = 0;
@@ -521,7 +517,7 @@
                         }
                         let x = '';
                         ws.forEach((money, num) => {
-                            x += '<div class="lot_string">一次性查看' + num + '张，单价自动调整为：<b>¥' + money + '</b></div>';
+                            x += '<div class="lot_string">一次性获取' + num + '张，单价自动调整为：<b>¥' + money + '</b></div>';
                         });
                         if (ws.length > 0) {
                             $('.wholesale').show();
@@ -548,7 +544,7 @@
                     }
                     let x = '';
                     ws.forEach((money, num) => {
-                        x += '<div class="lot_string">一次性查看' + num + '张，单价自动调整为：<b>¥' + money + '</b></div>';
+                        x += '<div class="lot_string">一次性获取' + num + '张，单价自动调整为：<b>¥' + money + '</b></div>';
                     });
                     if (ws.length > 0) {
                         $('.wholesale').show();
@@ -593,9 +589,9 @@
                 let instance = $('.card_count');
                 if (inventoryHidden == 1) {
                     if (res.card_count <= 0) {
-                        instance.removeClass("badge-success").addClass("badge-dark").html("已售罄");
+                        instance.removeClass("badge-success").addClass("badge-dark").html("已公开");
                     } else if (res.card_count <= 5) {
-                        instance.removeClass("badge-success").addClass("badge-danger").html("即将售罄");
+                        instance.removeClass("badge-success").addClass("badge-danger").html("即将公开");
                     } else if (res.card_count <= 20) {
                         instance.removeClass("badge-success").addClass("badge-warning").html("一般");
                     } else if (res.card_count > 20) {
@@ -633,10 +629,10 @@
                 //跳转个人中心
                 layer.open({
                     type: 1,
-                    title: "您查看的卡密如下：",
+                    title: "您获取的账号如下：",
                     area: Pay.isMobile() ? ["100%", "100%"] : ['420px', '420px'],
                     content: '<textarea class="layui-input" style="padding: 15px;height: 98%;width: 100%;border: none;overflow-x: hidden;">' + res.secret + '</textarea>',
-                    btn: ['<span style="color:white;">查看更多信息/下载</span>'],
+                    btn: ['<span style="color:white;">查看更多信息</span>'],
                     yes: function () {
                         window.open('/user/personal/purchaseRecord?tradeNo=' + res.tradeNo);
                     }
@@ -692,6 +688,8 @@
 
 <!--end::HOOK-->
 
- 
-<!--end::HOOK-->
-</body><!--start::HOOK--></html>
+
+
+
+
+</body><!--start::HOOK--><!--end::HOOK--></html>
